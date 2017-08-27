@@ -1,0 +1,96 @@
+
+
+
+body {
+  line-height: 1.4;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  background: #27303c !important;
+}
+
+.image{
+	margin-top: 30px;
+}
+#container-design {
+  font-family: ruda;
+  border: 10px solid  #29282b;
+  background: #3b8686;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 25px;
+  max-height: 1030px;
+  margin-top: 5%;
+}
+.container{
+	font-family: ruda;
+}
+
+h4{
+	color: white !important;
+	margin: 0 auto;
+	text-align: center;
+}
+#play{
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	background-color: transparent !important;
+}
+
+.creator{
+	margin-top: 7px;
+	float: right;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+}
+button{
+	margin-top: 10px;
+}
+
+.bg-btn{
+	color: black;
+}
+.bg-btn .pick-diff{
+	margin: 10px;
+}
+.bg-btn .pick-diff img{
+	max-width: 250px;
+}
+.bg-btn .choose{
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px;
+}
+
+
+img{
+	background-color: transparent !important;
+}
+hr{
+	margin-top: -5px !important;
+	width: 18px;
+}
+#submit{
+	font-size: 18px;
+	padding: 10px 0px;
+	background: linear-gradient(to right, #ccffff 44%, #33ccff 74%);
+	border: 0;
+}
+#choices{
+	margin-top: 20px;
+}
+.choizis{
+	font-size: 18px;
+	padding: 10px 0px;
+	background-color: rgba(138, 177, 183, 0.82);
+}
+#question{
+	background-color: #45555B;
+	font-size: 18px;
+	color: white;
+	padding: 20px;
+	margin: 0 auto;
+	border: 1px solid white;
+	text-align: center;
+}

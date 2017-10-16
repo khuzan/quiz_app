@@ -290,12 +290,16 @@ function checkAnswer() {
     // change button text back to "Submit Answer"
     submitBtn.textContent = "Submit Answer";
     // if we're not on last question, increase question number
-    console.log(currentQuestion < quiz[diff].length - 1);
+    console.log(quiz[diff].length - 1);
     if (currentQuestion < quiz[diff].length - 1) {
       currentQuestion++;
       askQuestion();
     } else {
-      showFinalResults();
+      if(level.easy == 1 && level.hard == 1 && level.moderate == 1){
+        showFinalResults();
+      }else{
+        choose difficulty //change
+      }
     }
 
 
@@ -303,9 +307,10 @@ function checkAnswer() {
 }
 
 function showFinalResults() {
+  var score = (score.easy + score.moderate + score.herd;
   content.innerHTML = "<h2>You've completed the quiz!</h2>" +
-    "<h2>" + score[diff] + " out of " + quiz[diff].length + " questions, " +
-    Math.round(score[diff] / quiz[diff].length * 100) + "%<h2>" +
+    "<h2>" + score + " out of " + quiz[diff].length + " questions, " +
+    Math.round(score / 45 * 100) + "%<h2>" +
      "<button class='get'>Choose Again</button>";
 }
 

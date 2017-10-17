@@ -222,7 +222,10 @@ function askQuestion() {
   choices = quiz[diff][currentQuestion].choices;
   // console.log(choices);
   choicesHtml = "";
- 
+ // set level value to 1
+ if (quiz[diff]) {
+
+ }
   // loop through choices, and create radio buttons
   for (var i = 0; i < choices.length; i++) {
     choicesHtml += "<span class='col-lg-12 col-xs-12 choizis'><input type='radio' name='quiz" + currentQuestion +
@@ -296,9 +299,10 @@ function checkAnswer() {
       askQuestion();
     } else {
       if(level.easy == 1 && level.hard == 1 && level.moderate == 1){
-        showFinalResults();
+        GetResults();
       }else{
-        choose difficulty //change
+        // choose difficulty //change
+        Presults();
       }
     }
 
@@ -306,13 +310,22 @@ function checkAnswer() {
   }
 }
 
-function showFinalResults() {
-  var score = (score.easy + score.moderate + score.herd;
+function Presults(){
+  if (currentQuestion == 14) {
+    $('#div_Q').hide();
+    $('#content').show();
+  }
+  content.innerHTML = "<h2>You've completed the quiz!</h2>" +
+    "<h2>" + score[diff] + " out of " + quiz[diff].length + " questions, " +
+    Math.round(score[diff] / quiz[diff].length * 100) + "%<h2>" +
+     "<button class='get'>Choose difficulty</button>";
+}
+function GetResults() {
+
   content.innerHTML = "<h2>You've completed the quiz!</h2>" +
     "<h2>" + score + " out of " + quiz[diff].length + " questions, " +
     Math.round(score / 45 * 100) + "%<h2>" +
-     "<button class='get'>Choose Again</button>";
+     "<button class='get'>Choose Again HELLLLOOOOOOOOOOOOO!</button>";
 }
-
 // window.addEventListener("load", askQuestion, false);
 submitBtn.addEventListener("click", checkAnswer, false);
